@@ -35,6 +35,8 @@
     --BlueGrey: #8BB5C9;
     --GoldGrey: #A9BC87;
     --WhiteWhite: #F3F3F3;
+    --Shadow: rgba(0, 0, 0, 0.1);
+    --ShadowHover: rgba(0, 0, 0, 0.2);
     
 } 
 nav {
@@ -56,11 +58,22 @@ nav div a {
     font-weight: 500;
 
 }
+nav div a:hover {
+    color: var(--PrimaryOrange);
+    transition: 0.25s ;
+}
 nav div a:last-child {
     color: var(--Complementary);
     border: 1px solid var(--Complementary);
     border-radius: 32.5px;
     padding: 15px 35px;
+    transition: 0.25s;
+    box-shadow: 0px 3px 6px var(--Shadow);
+}
+nav div a:last-child:hover {
+    transform: translateY(-5px);
+    transition: 0.25s;
+    box-shadow: 0px 6px 12px var(--ShadowHover);
 }
 .main {
     width: 1440px;
@@ -100,6 +113,13 @@ nav div a:last-child {
     height: 45px;
     border-radius: 32.5px;
     text-decoration: none;
+    transition: 0.25s;
+    box-shadow: 0px 3px 6px var(--Shadow);
+}
+.head div a:hover {
+    transform: translateY(-5px);
+    transition: 0.25s;
+    box-shadow: 0px 6px 12px var(--ShadowHover);
 }
 .head img {
     width: 704.816px;
@@ -109,7 +129,7 @@ nav div a:last-child {
     display: flex;
     justify-content: space-around;
     gap: 32px;
-    padding-top: 147px;
+    padding-top: 172px;
 }
 .upper div {
     display: flex;
@@ -141,6 +161,8 @@ nav div a:last-child {
     display: flex;
     justify-content: space-around;
     align-items: space-around;
+    gap: 100px;
+    padding-bottom: 157px;
 }
 .list div {
     display: flex;
@@ -168,6 +190,7 @@ nav div a:last-child {
     height: 305px;
     width: 100%;
     background-color: #fff;
+    gap: 40px;
 }
 .problems img {
     height: 66px;
@@ -184,16 +207,145 @@ nav div a:last-child {
     justify-content: center;
     align-items: center;
     margin: 140px 120px;
+    gap: 25px;
 }
-.left-side {
+.example-text {
+    color: var(--DarkGreyBlue);
+    font-style: italic;
+    font-weight: 100;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.examples img {
+    width: 100%;
+    height: 100%;
+}
+.ourworks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ourworks h2 {
+    padding-top: 140px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--DarkGreyBlue);
+}
+.left-side,.right-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    background:blue;
+    background: #FFF;
     box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+    padding-top: 45px;
+    padding-bottom: 50px;
+    gap: 25px;
 }
-.examples img {
-    height: 20px;
+.left-side-of-explain, .right-side-of-explain {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
+.bottom-explain {
+    text-decoration: none;
+    color: var(--Complementary);
+    border: 1px solid var(--Complementary);
+    border-radius: 32.5px;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: 0.25s;
+    box-shadow: 0px 3px 6px var(--Shadow);
+}
+.bottom-explain:hover {
+    transform: translateY(-5px);
+    transition: 0.25s;
+    box-shadow: 0px 6px 12px var(--ShadowHover);
+}
+.hiring {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--AnotherAnotherWhite);
+}
+.hiring img {
+    width: 100%;
+    height: 100%;
+}
+.img {
+    height: 319px;
+    width: 291px;
+}
+.hiring div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.hiring div h2 {
+    color: var(--DarkGreyBlue);
+    font-size: 50px;
+}
+.hiring div p {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--PrimaryOrange);
+}
+.hiring div a {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--Complementary);
+    width: 243px;
+    height: 45px;
+    border-radius: 32.5px;
+    text-decoration: none;
+    transition: 0.25s;
+    box-shadow: 0px 3px 6px var(--Shadow);
+}
+.hiring div a:hover {
+    transform: translateY(-5px);
+    transition: 0.25s;
+    box-shadow: 0px 6px 12px var(--ShadowHover);
+}
+.main-infotmation-send {
+    background-color: var(--SecondaryYellow);
+    height: 933px;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 401px;
+}
+.rights p {
+    padding-top: 85px;
+    color: var(--Grey);
+}
+.Companies, .messanger, .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Companies a {
+    text-decoration: none;
+    color: var(--AnotherComplementary);
+}
+.Companies a:hover {
+    color: var(--PrimaryOrange);
+}
+.contact a {
+    text-decoration: none;
+    color: var(--AnotherComplementary);
+}
+.contact a:hover {
+    color: var(--PrimaryOrange);
+}
+.messanger a:hover {
+    filter:  brightness(0.8);
+}
+
