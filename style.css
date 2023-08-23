@@ -1,0 +1,199 @@
+* {
+    font-family: 'Circular Std', sans-serif;
+    font-family: 'Roboto', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url(fonts/CircularStd-Bold.woff) format("woff"),
+         url(fonts/CircularStd-Book.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf) format('truetype'),
+         url(fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --Complementary: #46B8C8;
+    --PrimaryOrange: #FB8958;
+    --SecondaryYellow: #FFC351;
+    --Black: #141416;
+    --DarkGreyBlue: #3D4F5C;
+    --White: #FFFFFF;
+    --Grey: #939393;
+    --AnotherWhite: #F5F5F5;
+    --AnotherAnotherWhite: #FBFAFA;
+    --AnotherComplementary: #00A0B6;
+    --Purple: #8B60D3;
+    --BlueGrey: #8BB5C9;
+    --GoldGrey: #A9BC87;
+    --WhiteWhite: #F3F3F3;
+    
+} 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 120px;
+}
+nav div {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+nav div a {
+    text-decoration: none;
+    color: var(--DarkGreyBlue);
+    font-weight: 500;
+
+}
+nav div a:last-child {
+    color: var(--Complementary);
+    border: 1px solid var(--Complementary);
+    border-radius: 32.5px;
+    padding: 15px 35px;
+}
+.main {
+    width: 1440px;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 145px;
+    margin-left: 120px;
+}
+.head div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    gap: 25px;
+}
+.head div h1 {
+    font-family: 'Roboto';
+    font-size: 85px;
+    color: var(--DarkGreyBlue);
+}
+.head div p {
+    font-size: 24px;
+    color: var(--PrimaryOrange);
+}
+.head div a {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--Complementary);
+    width: 157px;
+    height: 45px;
+    border-radius: 32.5px;
+    text-decoration: none;
+}
+.head img {
+    width: 704.816px;
+    height: 507px;
+}
+.upper {
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+    padding-top: 147px;
+}
+.upper div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.upper h2 {
+    color: var(--DarkGreyBlue);
+    font-size: 50px;
+}
+.upper div p {
+    color: var(--PrimaryOrange);
+    font-size: 24px;
+}
+.img-upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper img {
+    height: 88px;
+    width: 75px;
+}
+.lower, .upper {
+    background-color: var(--AnotherAnotherWhite);
+    padding: 80px 128px 0;
+}
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+.list div {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+}
+.numbers {
+    padding-bottom: 24px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--PrimaryOrange);
+    border-bottom: 1px solid var(--DarkGreyBlue)
+}
+.text {
+    padding-top: 35px;
+    font-size: 30px;
+    color: var(--DarkGreyBlue);
+}
+.problems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+    width: 100%;
+    background-color: #fff;
+}
+.problems img {
+    height: 66px;
+    width: 59px;
+}
+
+.problems h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--PrimaryOrange);
+}
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 140px 120px;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+}
+.examples img {
+    height: 20px;
+}
