@@ -125,6 +125,7 @@ nav div a:last-child:hover {
     width: 704.816px;
     height: 507px;
 }
+/*  ось тут "Who we are" знаходиться правіше ніж верхній блок */
 .upper {
     display: flex;
     justify-content: space-around;
@@ -225,6 +226,7 @@ nav div a:last-child:hover {
     align-items: center;
     flex-direction: column;
 }
+/* ось тут не знаю як виправити нерівномірне віддалення блоків (правий нижній блок більший за інші)  */
 .ourworks h2 {
     padding-top: 140px;
     font-size: 50px;
@@ -312,6 +314,7 @@ nav div a:last-child:hover {
     transition: 0.25s;
     box-shadow: 0px 6px 12px var(--ShadowHover);
 }
+/* ось тут навіть не знаю з чого почати */
 .main-infotmation-send {
     background-color: var(--SecondaryYellow);
     height: 933px;
