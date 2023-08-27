@@ -1,3 +1,5 @@
+/* є в інтернеті файлт цсс для ресетування стандвртних стилів бразера тобто робиш все як треьа ьез неочікуванї поведінки ше мають назву нормалайз цсс
+подивист почитай */
 * {
     font-family: 'Circular Std', sans-serif;
     font-family: 'Roboto', serif;
@@ -43,7 +45,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 120px;
+    /* margin: 30px 120px; */
+    /*тут не так треба задати ширину яку ти потребуєш і тоді вже маржин право і ліво на авто  */
+    max-width: 1440px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* abo */
+    margin: 0 auto 0 auto;
+    /* і так правильно робити на контейнер обгортку наприклад на увесь сайт тобто для main */
 }
 nav div {
     text-decoration: none;
@@ -121,11 +130,15 @@ nav div a:last-child:hover {
     transition: 0.25s;
     box-shadow: 0px 6px 12px var(--ShadowHover);
 }
+
+/* картинку даєш абсолютом якщо виходить за рамки і вказуєш в процентах тоді буде більш респонсивна
+якщо потріьно то модна використовувати і мінусові значкння для позиціювання */
 .head img {
     width: 704.816px;
     height: 507px;
 }
-/*  ось тут "Who we are" знаходиться правіше ніж верхній блок */
+/*  ось тут "Who we are" знаходиться правіше ніж верхній блок */ 
+/* причина в тій обгортці */
 .upper {
     display: flex;
     justify-content: space-around;
